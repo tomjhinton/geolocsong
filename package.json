@@ -1,0 +1,40 @@
+{
+  "name": "geolocsong",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "run:client": "webpack-dev-server",
+    "run:server": "nodemon",
+    "seed": "node seeds",
+    "build": "webpack -p",
+    "start": "node index",
+    "serve:react": "webpack-dev-server",
+    "serve:flask": "pipenv run flask run -p 4000",
+    "postinstall": "[ \"$NODE_ENV\" = \"production\" ] && yarn build || exit 0"
+  },
+  "repository": "git@github.com:tomjhinton/geolocsong.git",
+  "author": "Tom Hinton <tomjhinton@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "bulma": "^0.7.5",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.1.0",
+    "dev-server": "^0.1.0",
+    "dotenv-webpack": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
