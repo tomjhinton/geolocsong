@@ -5,6 +5,9 @@ import 'bulma'
 import './style.scss'
 
 
+import Home from './components/Home'
+
+
 class App extends React.Component {
   constructor(){
     super()
@@ -18,12 +21,13 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
 
       <Router>
         <main>
 
-          HIYA
+          < Home/>
 
 
         </main>
